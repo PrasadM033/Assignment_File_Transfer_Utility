@@ -10,13 +10,13 @@ The system is designed with a modular architecture, ensuring scalability, mainta
 
 ## 🚀 Features
 
-✅ Transfer large files (up to 16 GB)
-✅ Chunk-based streaming (memory efficient)
-✅ Optional compression (gzip, based on file type)
-✅ Integrity verification using SHA-256
-✅ Error handling and reporting
-✅ Cross-platform compatibility (Windows/Linux/macOS)
-✅ Modular architecture (protocol, transport, fileio, compression, integrity)
+✅ Transfer large files (up to 16 GB)  
+✅ Chunk-based streaming (memory efficient)  
+✅ Optional compression (gzip, based on file type)  
+✅ Integrity verification using SHA-256  
+✅ Error handling and reporting  
+✅ Cross-platform compatibility (Windows/Linux/macOS)  
+✅ Modular architecture (protocol, transport, fileio, compression, integrity)  
 ---------------------------------------
 
 ## Project Structure
@@ -25,30 +25,31 @@ The system is designed with a modular architecture, ensuring scalability, mainta
 ---------------------------------------
 
 ## ▶️ How to Build
-go mod tidy
-go build ./cmd/sender
-go build ./cmd/receiver
+go mod tidy  
+go build ./cmd/sender  
+go build ./cmd/receiver  
 
 ---------------------------------------
 
 ## 🔄 Transfer Flow
 
-Sender:
-Compute SHA-256 hash
-Decide compression
-Send metadata (filename + compression + hash)
-Send file in chunks
-Send END signal
-Wait for ACK
-Receiver:
-Receive metadata
-Parse compression + hash
-Receive chunks
-Decompress (if required)
-Write file
-Compute SHA-256
-Compare with sender hash
-Send ACK
+Sender:  
+Compute SHA-256 hash  
+Decide compression  
+Send metadata (filename + compression + hash)  
+Send file in chunks  
+Send END signal  
+Wait for ACK  
+
+Receiver:  
+Receive metadata  
+Parse compression + hash  
+Receive chunks  
+Decompress (if required)  
+Write file  
+Compute SHA-256  
+Compare with sender hash  
+Send ACK  
 
 
 ---------------------------------------
