@@ -21,7 +21,7 @@ The system is designed with a modular architecture, ensuring scalability, mainta
 
 ## Project Structure
 
-![alt text](Folder_structure.png)
+![alt text](ReadMeImages/Folder_structure.png)
 ---------------------------------------
 
 ## ▶️ How to Build
@@ -57,12 +57,12 @@ Send ACK
 
 ## Implementation overview
 
-![alt text](image.png)
+![alt text](ReadMeImages/image.png)
 ---------------------------------------
 
 ## Test logs
 
-![alt text](Logs.png)
+![alt text](ReadMeImages/Logs.png)
 
 ---------------------------------------
 
